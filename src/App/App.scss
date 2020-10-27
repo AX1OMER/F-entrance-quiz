@@ -1,2 +1,66 @@
 .App {
+  background-color:#f7f7f7;
+  display: flex;
+  flex-direction: column;
+
+  .StudentTeam {
+
+    .teamName {
+      background-color: #929aab;
+      color: white;
+      text-align:center;
+      margin-top:0px;
+      margin-bottom:5px;
+      padding:5px;
+    }
+
+    width: 95%;
+    margin:2.5%;
+    border:solid 1px;
+    span {
+      margin:15px;
+    }
+  }
+
+  button {
+    background-color: #ea5455;
+    color: white;
+    float: right;
+    margin-right:2.5%;
+
+  }
+
+  .StudentList {
+    width: 95%;
+    margin:2.5%;
+  }
+
+  .Title {
+    font-weight: bold;
+    background-color:#f7f7f7;
+    font-size:20px;
+  }
+
+  //p {
+  //  display:flex;
+  //  justify-content:space-between;
+  //}
+
+  span {
+    width:100px;
+    align-items: center;
+    background:#eeeeee;
+    margin:5px;
+    display: inline-block;
+    text-align:center;
+  }
+
+  input {
+    width:92px;
+    margin:5px;
+    text-align:center;
+    background:#eeeeee;
+    border:solid 1px #929aab;
+  }
 }
+

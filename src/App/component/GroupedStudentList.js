@@ -21,8 +21,8 @@ class GroupedStudentList extends Component {
         const groupedStudentList = this.state.groupedStudentList
         return (
             <div>
-                <span>分组列表</span>
-                <button onClick={() => this.onClick()}>分组学员</button>
+                <p className="GroupListHeader"><span className="Title">分组列表</span>
+                    <button onClick={() => this.onClick()}>分组学员</button></p>
                 {groupedStudentList.map((studentTeam, index) => <StudentTeam key={index} team={studentTeam}/>)}
             </div>
         )

@@ -55,15 +55,17 @@ class StudentList extends Component {
   render () {
     const {studentList,newStudent} = this.state
     return (
-      <div>
-        <p>学员列表</p>
-        {studentList.map(student => <span key={student}>{student}</span>)}
-        <input type="text" id="addStudent"
-               value={newStudent} onKeyDown={this.onKeyDown}
-               onChange={this.onChange}
-               onFocus={this.onFocus}
-               onBlur={this.onBlur}
-        />
+      <div className={"StudentList"}>
+        <p className="Title">学员列表</p>
+        <div className="StudentsName">
+          {studentList.map(student => <span key={student}>{student}</span>)}
+          <input type="text" id="addStudent"
+                 value={newStudent} onKeyDown={this.onKeyDown}
+                 onChange={this.onChange}
+                 onFocus={this.onFocus}
+                 onBlur={this.onBlur}
+          />
+        </div>
       </div>
     )
   }
