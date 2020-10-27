@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import HttpClient from "./HttpClient";
 
 class StudentTeam extends Component {
     render() {
